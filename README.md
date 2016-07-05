@@ -1,14 +1,14 @@
-ll become a heading
+upcrypt
 ==============
 
-Will become a sub heading
+Batch encrypt files using 7zip (AES-256)
 --------------
 
-*This will be Italic*
+*Upcrypt is a simple python script which wraps p7zip and makes it easy to encrypt large amounts of files individually.  The script is not necessary to **decrypt**; 7-zip or p7zip by themselves will work just fine.*
 
-**This will be Bold**
+Typical use case:
 
-- This will be a list item
-- This will be a list item
+- Uploading many files to an untrusted cloud service, but need to access them on an individual basis.
 
-    Add a indent and this will end up as code
+This prevents the need to extract the entire archive when accessing a single file, and saves you the hassle of having to encrypt each file individually.
+
