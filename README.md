@@ -24,11 +24,11 @@ Usage:
     FILES                 Files or directories to process
 
   optional arguments:
-    -h, --help               show this help message and exit
-    -d, --decrypt            Decrypt rather than encrypt
-    -p PASS, --password PASS Password to use for encryption/decryption
-    -o DIR, --out-dir DIR    Where to put processed files
-    -w, --wrap               Zip contents into single file (don't encrypt individually)
-    -t INT, --threads INT    Number of CPU cores to use. Default is all.
-    --split SIZE             Split into volumes of SIZE. Default is None. Useful for circumventing filesize limitations. ;)
-    -v, --verbose            Print what is happening. (limits threads to 1)
+    -h, --help               show this help message and exit  
+    -d, --decrypt            Decrypt rather than encrypt  
+    -p PASS, --password PASS Password to use for encryption/decryption  
+    -o DIR, --out-dir DIR    Where to put processed files  
+    -w, --wrap               Zip contents into single file (don't encrypt individually)  
+    -t INT, --threads INT    Number of CPU cores to use. Default is all.  
+    --split SIZE             Split into volumes of SIZE. Default is None. Useful for circumventing filesize limitations. ;)  
+    -v, --verbose            Print what is happening. (limits threads to 1)  
