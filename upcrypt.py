@@ -308,15 +308,15 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(
         description="Batch-encrypts files using 7-zip.\
-        To 'Process' means to encrypt or decrypt, depending on which it's doing.")
+        To 'process' means to encrypt or decrypt, depending on which it's doing.")
     parser.add_argument('files',                type=os.path.abspath,   nargs='*',          metavar='FILES',    help="Files or directories to process")
     parser.add_argument('-d', '--decrypt',      action='store_true',                                            help="Decrypt rather than encrypt")
-    parser.add_argument('-p', '--password',     type=str,   required=True,                  metavar='PASS',     help="Password to use for encryption/decryption")
+    parser.add_argument('-p', '--password',     type=str,           required=True,          metavar='PASS',     help="Password to use for encryption/decryption")
     parser.add_argument('-o', '--out-dir',      type=os.path.abspath,                       metavar='DIR',      help="Where to put processed files")
-    parser.add_argument('-w', '--wrap',         action='store_true',                                            help="Zip directories into single file - don't encrypt individually")
+    parser.add_argument('-w', '--wrap',         action='store_true',                                            help="Zip contents into single file (don't encrypt individually)")
     parser.add_argument('-t', '--threads',      type=int,           default=cpu_count(),    metavar='INT',      help="Number of CPU cores to use.  Default is all.")
-    parser.add_argument('--split',              type=str,           default=split_size,     metavar='SIZE',     help="Split into volumes of SIZE.  Default is {}.  Useful for circumventing filesize limitations. ;)".format(str(split_size)))
-    parser.add_argument('-v', '--verbose',      action='store_true',                                            help="Print what is happening.  Note: sets threads to 1.")
+    parser.add_argument('--split',              type=str,           default=split_size,     metavar='SIZE',     help="Split into volumes of SIZE. Useful for circumventing filesize limitations. ;)")
+    parser.add_argument('-v', '--verbose',      action='store_true',                                            help="Print what is happening.  (limits threads to 1)")
 
     try:
         options = parser.parse_args()
