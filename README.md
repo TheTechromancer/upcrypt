@@ -8,7 +8,7 @@ Upcrypt is a simple python script which wraps p7zip and makes it easy to encrypt
 
 Typical use case:
 
-- Uploading large amounts of files to an untrusted cloud service, but need to access them on an individual basis.
+- Uploading a large number of files to untrusted cloud service, but must have the ability to access them on an individual basis.
 
 This prevents the need to extract the entire archive when accessing a single file, and saves you from having to encrypt each file individually.
 
