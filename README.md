@@ -4,7 +4,7 @@ upcrypt.py
 Batch encrypt files using 7zip (AES-256)
 --------------
 
-Upcrypt is a simple python script which wraps p7zip and makes it easy to encrypt large amounts of files individually.  The script is not necessary to *decrypt*; 7-zip or p7zip by themselves will work just fine.
+Upcrypt is a simple python script which wraps p7zip and makes it easy to encrypt large amounts of files individually (while preserving their folder structure).  The script is not necessary to *decrypt*; 7-zip or p7zip by themselves will work just fine.
 
 Typical use case:
 
